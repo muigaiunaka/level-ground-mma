@@ -1,0 +1,11 @@
+.staff {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    float: left;
+    padding: $spacer-xl 0;
+    width: 100%;
+    @media only screen and (max-width: $max-mobile-width) {
+        padding: $spacer-sm;
+    }
+}

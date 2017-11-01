@@ -1,0 +1,17 @@
+<section class="row-banner">
+    <div class="row-banner-container">
+        <div class="row-banner-image-wrapper">
+            {% if page.row-banner.image %}
+                <img src="{{ page.row-banner.image }}" alt="" class="row-banner-image" />
+            {% endif %}
+        </div>
+        <div class="row-banner-content">
+            {% if page.row-banner.title %}
+                <h3>{{ page.row-banner.title }}</h3>
+            {% endif %}
+            {% if page.row-banner.description %}
+                <p>{{ page.row-banner.description }}</p>
+            {% endif %}
+        </div>
+    </div>
+</section>

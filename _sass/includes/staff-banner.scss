@@ -1,0 +1,61 @@
+.staff-banner {
+    border-top: 3px solid $color-primary;
+    color: $color-white;
+    float: left;
+    max-width: $max-row-width;
+    margin: $spacer-md auto;
+    width: 100%;
+    .staff-banner-image-wrapper {
+        align-items: center;
+        display: flex;
+        float: left;
+        justify-content: center;
+        overflow: hidden;
+        width: calc(100% / 2);
+        @media only screen and (min-width: $max-mobile-width) {
+            @include box-shadow($box-shadow1...);
+        }
+        @media only screen and (max-width: $max-mobile-width) {
+            width: 100%;
+        }
+    }
+    .staff-banner-content {
+        background-color: $color-grey;
+        @include box-shadow($box-shadow1...);
+        color: $color-white;
+        float: left;
+        padding: $spacer-sm;
+        width: calc( (100% / 2) );
+        @media only screen and (min-width: $max-mobile-width) {
+            @include box-shadow($box-shadow1...);
+        }
+        @media only screen and (max-width: $max-mobile-width) {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .logo-wrapper {
+        padding: 100px;
+    }
+    .logo {
+        max-height: 100px;
+        object-position: center;
+        width: auto;
+    }
+    img {
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+    }
+    h3, h4 {
+        margin-top: 0;
+    }
+    a {
+        color: $color-white;
+        margin-left: 10px;
+    }
+    p {
+
+    }
+}

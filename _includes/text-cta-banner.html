@@ -1,0 +1,17 @@
+<section class="text-cta-banner">
+    <div class="text-cta-banner-content">
+        {% if page.text-cta-banner.title %}
+            <h2>{{ page.text-cta-banner.title }}</h2>
+        {% endif %}
+
+        {% if page.text-cta-banner.description %}
+            <p>{{ page.text-cta-banner.description }}</p>
+        {% endif %}
+
+        {% if page.text-cta-banner.cta.text %}
+            <a href="{{ page.text-cta-banner.cta.link  }}">
+                <button>{{ page.text-cta-banner.cta.text  }}</button>
+            </a>
+        {% endif %}
+    </div>
+</section>

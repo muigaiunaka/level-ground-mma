@@ -1,0 +1,55 @@
+header:
+  - url: /away
+    title: Away
+    identifier: away
+  - url: /gym
+    title: Gym
+    identifier: gym
+  - url: /staff
+    title: Staff
+    identifier: staff
+
+header-logo:
+  - url: /
+    title: logo
+    identifier: logo
+    logo-image: "/assets/image/lg_logo.png"
+
+header-cta:
+  - url: /give
+    title: Give
+    identifier: give
+
+social-media:
+  - url: http://www.facebook.com
+    title: facebook
+    identifier: facebook
+    icon: fa-facebook-square
+  - url: http://www.twitter.com
+    title: twitter
+    identifier: twitter
+    icon: fa-twitter-square
+  - url: http://www.email.com
+    title: email
+    identifier: email
+    icon: fa-envelope-o
+
+site-map:
+  - url: /away
+    title: Away
+    identifier: away
+  - url: /gym
+    title: Gym
+    identifier: gym
+  - url: /give
+    title: Give
+    identifier: give
+  - url: /staff
+    title: Staff
+    identifier: staff
+  - url: /success-tracks
+    title: Success Tracks
+    identifier: success-tracks
+  - url: /news
+    title: News
+    identifier: news

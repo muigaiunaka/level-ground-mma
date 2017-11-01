@@ -1,0 +1,36 @@
+---
+layout: default
+--- 
+<section class="post-container">
+    <div class="post-header">
+      <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="meta">
+          <time datetime="{{ page.date }}">
+              {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+              {{ page.date | date: date_format }}
+          </time>
+          {% if page.author %}
+          • <span></span><span itemprop="name">{{ page.author }}</span></span>
+          {% endif %}
+      </p>
+    </div>
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <div class="post-page-navigation">
+        {% if page.previous.url %}
+          <!-- <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> -->
+          <a class="prev" href="{{page.previous.url}}">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"> </i> 
+            {{page.previous.title }}
+          </a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">
+            {{page.next.title}}
+            <i class="fa fa-long-arrow-right" aria-hidden="true"> </i>
+          </a>
+        {% endif %}
+    </div>
+  </section>
+  

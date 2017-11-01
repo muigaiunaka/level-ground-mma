@@ -1,0 +1,60 @@
+<header>
+    <nav class="header-nav">
+        <ul class="header-nav-list">
+            {% for item in site.menus.header %}
+            <li class="menu-item-{{ loop.index }}">
+                <a href="{{ item.url }}" title="Go to {{ item.title }}">
+                    {{ item.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <!-- Mobile Navigation -->
+        <nav role="hamburger-menu" id="navigation-drawer">
+            <div class="mobile-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="navigation-drawer-menu-button">Menu</div>
+                <ul class="menu">
+                {% for item in site.menus.site-map %}
+                    <li class="footer-menu-item-{{ loop.index }}">
+                        <a href="{{ item.url }}" title="Go to {{ item.title }}">
+                            {{ item.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+                {% for item in site.menus.social-media %}
+                    <li class="social-media-{{ loop.index }}">
+                        <a href="{{ item.url }}" title="Go to {{ item.title }}">
+                        <i class="fa {{ item.icon }}" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Navigation Ends -->
+        <ul class="header-nav-list">
+            {% for item in site.menus.header-logo %}
+            <li class="menu-item-{{ loop.index }}">
+                <a href="{{ item.url }}" title="Go to {{ item.title }}">
+                    <img src={{ item.logo-image }} alt="{{ item.title }}" />
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul class="header-nav-list">
+            {% for item in site.menus.header-cta %}
+            <li class="menu-item-{{ loop.index }}">
+                <a href="{{ item.url }}" title="Go to {{ item.title }}">
+                    <button>
+                        {{ item.title }}
+                    </button>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

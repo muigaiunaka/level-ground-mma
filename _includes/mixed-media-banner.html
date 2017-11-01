@@ -1,0 +1,66 @@
+{% if page.mixed-media-banner.background-image %}
+    <section class="mixed-media-banner">
+        <img src="{{ page.mixed-media-banner.background-image }}" alt="" class="mixed-media-banner-bg-image" />
+    {% else %}
+    <section class="mixed-media-banner white-bg-container">
+        <img src="{{ site.default_white_image }}" alt="" class="mixed-media-banner-bg-image white-bg" />
+    {% endif %}
+
+    <div class="mixed-media-banner-cards">
+        {% for card in page.mixed-media-banner.cards %}
+            <div class="mixed-media-banner-card">
+                {% if card.image %}
+                    <div class="mixed-media-banner-card-image-wrapper">
+                        <img src="{{ card.image }}" alt="" />
+                    </div>
+                    <div class="mixed-media-banner-content">
+                        {% if card.title %}
+                            <h3>{{ card.title }}</h3>
+                        {% endif %}
+                        {% if card.description %}
+                            <p>{{ card.description }}</p>
+                        {% endif %}
+                        {% if card.footnote %}
+                            <em>{{ card.footnote }}</em>
+                        {% endif %}
+                        {% if card.cta.text %}
+                            <a href="{{ card.cta.link  }}">
+                                <button>{{ card.cta.text  }}</button>
+                            </a>
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <div class="mixed-media-banner-content">
+                        {% if card.title %}
+                            <h3>{{ card.title }}</h3>
+                        {% endif %}
+                        {% if card.description %}
+                            <p>{{ card.description }}</p>
+                        {% endif %}
+                        {% if card.cta.text %}
+                            <a href="{{ card.cta.link  }}">
+                                <button>{{ card.cta.text  }}</button>
+                            </a>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        {% if page.mixed-media-banner.footnote %}
+            <div class="mixed-media-banner-footnote">
+                <em>{{ page.mixed-media-banner.footnote }}</em>
+                {% if page.mixed-media-banner.cta.text %}
+                    <a href="{{ page.mixed-media-banner.cta.link  }}">
+                        <button>{{ page.mixed-media-banner.cta.text  }}</button>
+                    </a>
+                {% endif %}
+            </div>
+        {% elsif page.mixed-media-banner.cta.text %}
+            <div class="mixed-media-banner-footnote">
+                <a href="{{ page.mixed-media-banner.cta.link  }}">
+                    <button>{{ page.mixed-media-banner.cta.text  }}</button>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</section>

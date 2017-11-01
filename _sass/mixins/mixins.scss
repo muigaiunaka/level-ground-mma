@@ -1,0 +1,27 @@
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}
+
+@mixin bg-overlay() {
+    background-color: rgba(0, 0, 0, 0.46);
+    content: "";
+    display: block;
+    float: left;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: $bg-overlay-z;
+}
+// column width (number), column count (number w/o units), column gap (number)
+@mixin columns($columnWidth, $columnCount, $columnGap: normal) {
+    -webkit-columns: $columnWidth $columnCount;
+    -moz-columns: $columnWidth $columnCount;
+    columns: $columnWidth $columnCount;
+    -webkit-column-gap: $columnGap;
+    -moz-column-gap: $columnGap;
+    column-gap: $columnGap;
+}

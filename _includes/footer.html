@@ -1,0 +1,43 @@
+<footer>
+    <section>
+        <ul>
+            {% for item in site.menus.social-media %}
+            <li class="social-media-{{ loop.index }}">
+                <a href="{{ item.url }}" title="Go to {{ item.title }}">
+                    <i class="fa {{ item.icon }}" aria-hidden="true"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <h5>Site Map</h5>
+            {% for item in site.menus.site-map %}
+            <li class="footer-menu-item-{{ loop.index }}">
+                <a href="{{ item.url }}" title="Go to {{ item.title }}">
+                    {{ item.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <h5>Level Ground Mixed Martials Arts</h5>
+        <ul>
+            <li>50 Milk Street, Floor 17</li>
+            <li>Boston, MA, 02109</li>
+            <li>410-533-2210</li>
+            <a href=mailto:ali@levelgroundmma.org target="_blank">ali@levelgroundmma.org</a>
+        </ul>
+    </section>
+    <hr>
+    <small>
+        Level Ground Mixed Martials Arts 
+        &copy <script type="text/javascript">document.write(new Date().getFullYear());</script>
+        is a tax-exempt, 501 (c)3 organization under the IRS. EIN 46-3915852
+        <br><br>
+        Designed and Developed by <a href="http://www.resilientcoders.org">Resilient Coders</a>
+    </small>
+    <a href="/">
+        <img src="{{ '/assets/image/lg_logo.png' | relative_url }}" alt="logo" />
+    </a>
+</footer>

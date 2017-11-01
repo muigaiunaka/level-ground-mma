@@ -1,0 +1,27 @@
+<section class="staff">
+    {% for person in site.staff %}
+    <div class="staff-banner">
+            {% if person.image %}
+            <div class="staff-banner-image-wrapper">
+            <img src="{{ person.image }}" alt="{{ person.name }}"/>
+            {% else %}
+            <div class="staff-banner-image-wrapper logo-wrapper">
+            <img src="/assets/image/lg_logo.png" class="logo"/>
+            {% endif %}
+        </div>
+        <div class="staff-banner-content">
+            <h3>{{ person.name }}
+                <a href="mailto:{{ person.email }}" title="email of {{ person.name }}">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </a>
+            </h3>
+            {% if person.position %}
+                <h4>{{ person.position }}</h4>
+            {% endif %}
+            {% if person.content %}
+                <p>{{ person.content }}</p>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</section>

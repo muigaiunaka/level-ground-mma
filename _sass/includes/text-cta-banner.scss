@@ -1,0 +1,25 @@
+.text-banner,
+.text-cta-banner {
+    align-items: center;
+    background-color: $color-white;
+    display: flex;
+    flex-flow: column;
+    float: left;
+    height: 100vh;
+    justify-content: center;
+    max-height: $max-banner-height;
+    width: 100%;
+
+    .text-banner-content,
+    .text-cta-banner-content {
+        max-width: $content-container-max-width;
+        @media only screen and (max-width: $max-mobile-width) {
+            padding: $spacer-sm;
+            width: 100%;
+        }
+    }
+    h3, p {
+        max-width: $content-container-max-width;
+    }
+}
+

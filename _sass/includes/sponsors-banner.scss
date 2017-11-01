@@ -1,0 +1,38 @@
+.sponsors-banner {
+    border-top: 1px solid $color-light-grey;
+    float: left;
+    position: relative;
+    width: 100%;
+    .sponsors-banner-container {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        min-height: 100vh;
+        justify-content: center;
+        margin: 0 auto;
+        max-height: $max-banner-height;
+        max-width: $max-row-width;
+        width: 100%;
+        @media only screen and (max-width: $max-mobile-width) {
+            align-content: flex-start;
+            max-height: none;
+        }
+    }
+    .sponsors-banner-title {
+        width: 100%;
+    }
+    a {
+        filter: grayscale(100%);
+        max-width: calc(100% / 6);
+        padding: $spacer-xs;
+        @media only screen and (max-width: $max-mobile-width) {
+            max-width: calc(100% / 3);
+        }
+    }
+    img {
+        height: auto;
+        padding: $spacer-xs;
+        width: 100%;
+    }
+}

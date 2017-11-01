@@ -1,0 +1,39 @@
+<section class="hero-banner">
+    {% if page.hero-banner.media.video %}
+        <video class="hero-banner-video" loop muted autoplay playsinline preload="auto">
+            <source src="{{ page.hero-banner.media.video }}" type="video/mp4">
+        </video>
+    {% elsif page.hero-banner.media.image %}
+        <img src="{{ page.hero-banner.media.image }} " alt="" class="hero-banner-image" />
+    {% else %}
+        <img src="{{ site.default_image }}" alt="" class="hero-banner-image" />
+    {% endif %}
+    <div class="hero-banner-content">
+        {% if page.hero-banner.description %}
+
+            {% if page.hero-banner.title %}
+                <h1>{{ page.hero-banner.title }}</h1>
+            {% else %}
+                <h1>{{ page.title }}</h1>
+            {% endif %}
+            <h3>{{ page.hero-banner.description }}</h3>
+
+        {% else %}
+
+            {% if page.hero-banner.title %}
+                <h1 class="text-centered">{{ page.hero-banner.title }}</h1>
+            {% else %}
+                <h1 class="text-centered">{{ page.title }}</h1>
+            {% endif %}
+            
+        {% endif %}
+
+        {% if page.hero-banner.cta.text %}
+            <a href="{{ page.hero-banner.cta.link  }}">
+                <button>{{ page.hero-banner.cta.text  }}</button>
+            </a>
+        {% else %}
+            
+        {% endif %}
+    </div>
+</section>

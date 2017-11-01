@@ -1,0 +1,81 @@
+$logo-image-width: 40px;
+
+footer {
+    background-color: $color-grey;
+    float: left;
+    padding: $spacer-lg $spacer-lg;
+    @media only screen and (max-width: 768px) {
+        padding: $spacer-sm $spacer-sm;
+    }
+    width: 100%;
+    section {
+        float: left;
+        padding: 1em 0;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        &:first-of-type {
+            h5 {
+                color: $color-primary;
+            }
+        }
+        &:last-of-type {
+            float: right;
+            h5 {
+                color: $color-white;
+            }
+            li {
+                margin: 0 0 10px 0;
+                opacity: 0.75;
+            }
+            li, a {
+                clear: both;
+                color: $color-white;
+                display: block;
+                float: left; 
+            }
+        }    
+    }
+    h5 {
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
+    ul {
+        margin: 0 0 1em 0;
+        padding: 0;
+    }
+    li {
+        color: $color-white;
+        display: inline-block;
+        margin-right: 10px;
+        a {
+            color: $color-white;
+        }
+    }
+    .fa, i.fa {
+        font-size: 2em;
+        margin-right: 10px;
+    }
+    hr {
+        float: left;
+        width: 100%;
+    }
+    small {
+        color: $color-white;
+        float: left;
+        width: calc( 100% - #{$logo-image-width} );
+
+        a {
+            color: $color-primary;
+            &:hover {
+                color: $color-resilient-coders;
+            }
+        }
+    }
+    img {
+        float: right;
+        max-height: auto;
+        width: $logo-image-width;
+    }
+}

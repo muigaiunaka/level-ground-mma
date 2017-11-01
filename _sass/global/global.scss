@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+input.donate-button,
+button {
+    background-color: $color-primary;
+    border: none;
+    color: $color-white;
+    min-width: 140px;
+    @include box-shadow($box-shadow1...);
+    padding: $padding-button;
+    text-transform: uppercase;
+}
+
+.global-row-banner {
+    align-items: center;
+    background-color: $color-white;
+    display: flex;
+    flex-flow: column;
+    float: left;
+    height: 100vh;
+    justify-content: center;
+    max-height: $max-banner-height;
+    width: 100%;
+}
+
+.global-row-banner-container {
+    max-width: $content-container-max-width;
+    @media only screen and (max-width: $max-mobile-width) {
+        padding: $spacer-sm;
+        width: 100%;
+    }
+}
+
+.address {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.white-bg {
+    background-color: $color-white;
+}

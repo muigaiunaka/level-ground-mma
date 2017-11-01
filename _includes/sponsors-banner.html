@@ -1,0 +1,20 @@
+<section class="sponsors-banner">
+    <div class="sponsors-banner-container">
+        <h2 class="text-centered sponsors-banner-title">Our work would not be possible without the following partners</h2>
+        {% for logo in site.data.logos %}
+            {% if logo.image %}
+
+                {% if logo.website %}
+                    <a href="{{ logo.website }}" target="_blank">
+                        <img src="{{ logo.image }}" alt="{{ logo.name }} + sponsor logo" />
+                    </a>
+                {% else %}
+                    <a href="#">
+                        <img src="{{ logo.image }}" alt="{{ logo.name }} + sponsor logo" />
+                    </a>
+                {% endif %}
+
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>

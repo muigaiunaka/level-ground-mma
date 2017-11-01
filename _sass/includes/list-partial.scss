@@ -1,0 +1,19 @@
+.list-partial {
+    background-color: $color-grey;
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    justify-content: center;
+    min-height: $max-banner-height;
+    width: 100%;
+    .list-partial-container {
+        color: $color-white;
+        float: left;
+        max-width: calc(#{$max-row-width} / 2);
+        padding: $spacer-sm;
+        width: 50%;
+        @media only screen and (max-width: $max-mobile-width) {
+            width: 100%;
+        }
+    }
+}

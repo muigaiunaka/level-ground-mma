@@ -1,0 +1,88 @@
+body {
+    font-family: $font-family-primary;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+p {
+    font-family: $font-family-secondary;
+    font-size: 1em;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 3.5em;
+    line-height: 1.5;
+    @media only screen and (max-width: $max-mobile-width) {
+        font-size: 3em;
+    }
+}
+h2 {
+    font-size: 2.1em;
+    line-height: 1.5;
+    @media only screen and (max-width: $max-mobile-width) {
+        font-size: 1.9em;
+    }
+}
+h3 {
+    font-size: 1.9em;
+    line-height: 1.35;
+    @media only screen and (max-width: $max-mobile-width) {
+        font-size: 1.65em;
+    }
+}
+h4 {
+    font-size: 1.4em;
+    line-height: 1.35;
+    @media only screen and (max-width: $max-mobile-width) {
+        font-size: 1.25em;
+    }
+}
+h5 {
+    font-size: 1.1em;
+    @media only screen and (max-width: $max-mobile-width) {
+        font-size: 1.05em;
+    }
+}
+h6 {
+    font-size: 1.1em;
+    @media only screen and (max-width: $max-mobile-width) {
+        font-size: 1.05em;
+    }
+}
+small {
+    font-family: $font-family-secondary;
+    font-size: 0.8em;
+}
+p {
+    a {
+        color: $color-primary;
+    }
+}
+a {
+    color: $color-primary;
+    transition: all 200ms ease-in-out;
+}
+blockquote {
+
+}
+li {
+    font-family: $font-family-secondary;
+}
+
+// helper classes
+.text-centered {
+    text-align: center;
+}
+.white-bg ~ * {
+    i,
+    em,
+    strong,
+    b, 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $color-black!important;
+    }
+}

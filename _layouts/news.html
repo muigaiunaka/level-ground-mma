@@ -1,0 +1,26 @@
+--- 
+layout: page 
+---
+<section class="news-container">
+    {{ content }}
+    {% for post in site.posts %}
+    <section class="news-banner">
+        <div class="news-banner-container">
+            <div class="news-banner-content white-bg">
+                <h2>
+                    <a href="{{ post.url | relative_url }}" role="link">{{ post.title | escape }}</a>
+                </h2>
+            </div>
+            <div class="news-banner-content">
+                <time class="time">
+                    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                    {{ post.date | date: date_format }}
+                </time>
+                <p class="meta">
+                    {{ post.content | strip_html | escape | truncatewords: 80 }}
+                </p>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+</section>

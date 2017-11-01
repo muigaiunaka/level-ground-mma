@@ -1,0 +1,49 @@
+// colors
+$color-primary: #e0922f;
+$color-black: #000;
+$color-resilient-coders: #ed1b24;
+$color-orange: #e0922f;
+$color-grey: #414345;
+$color-light-grey: #d9d9d9;
+$color-white: #fff;
+$color-transparent: transparent;
+
+// spacing for margin and/or padding
+$spacer-xl: 5em;
+$spacer-lg: 4em;
+$spacer-md: 3em;
+$spacer-sm: 2em;
+$spacer-xs: 1em;
+
+// old padding
+$padding-header: $spacer-xs $spacer-lg;
+$padding-footer: $spacer-lg $spacer-lg;
+$padding-button: $spacer-xs $spacer-sm;
+$padding-mobile-lr: 15px;
+$padding-card-lr: 2em;
+
+// fonts
+$font-family-primary: 'Oswald', sans-serif;
+$font-family-secondary: 'Raleway', 'Roboto', sans-serif;
+
+// box shadows
+$box-shadow1: 0, 3px, 8px, rgba(0, 0, 0, 0.3);
+
+// media queries
+$min-large-desktop-width: 1920px;
+$max-medium-desktop-width: 1368px;
+$max-small-desktop-width: 1024px;
+$max-tablet-width: 992px;
+$max-mobile-width: 769px;
+
+// max widths
+$content-container-max-width: 720px;
+$max-row-width: 1024px;
+
+// max heights
+$max-banner-height: 540px;
+
+// z-indices
+$header-nav-z: 9999;
+$bg-overlay-z: 1;
+$cards-z: 2;

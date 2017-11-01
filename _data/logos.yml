@@ -1,0 +1,30 @@
+- name: MassHousing
+  image: "/assets/image/sponsors/mass-housing-logo.png"
+  website: https://www.masshousing.com/
+- name: HoodFit
+  image: "/assets/image/sponsors/hood-fit-logo.jpg"
+  website: https://www.facebook.com/HoodFitMA/
+- name: The Boston Foundation
+  image: "/assets/image/sponsors/the-boston-foundation-logo.jpg"
+  website: http://www.tbf.org/
+- name: The Forest Foundation
+  image: "/assets/image/sponsors/the-forest-foundation-logo.png"
+  website: http://forestfoundation.net/
+- name: The Lenny Zakim Fund
+  image: "/assets/image/sponsors/the-lenny-zakim-fund-logo.jpg"
+  website: http://www.thelennyzakimfund.org/home/
+- name: City of Boston
+  image: "/assets/image/sponsors/city-of-boston-logo.png"
+  website: https://www.boston.gov/
+- name: TUGG
+  image: "/assets/image/sponsors/tugg-logo.png"
+  website: http://tugg.org/
+- name: Reality Church Boston
+  image: "/assets/image/sponsors/reality-church-boston-logo.png"
+  website: http://www.realityboston.com/
+- name: New England Grassroots Environment Fund
+  image: "/assets/image/sponsors/new-england-grass-roots-fund-logo.jpg"
+  website: https://grassrootsfund.org/
+- name: Boston Police Department
+  image: "/assets/image/sponsors/bpd-logo.png"
+  website: http://bpdnews.com/
