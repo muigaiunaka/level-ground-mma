@@ -1,9 +1,9 @@
 {% if page.mixed-media-banner.background-image %}
     <section class="mixed-media-banner">
-        <img src="{{ page.mixed-media-banner.background-image }}" alt="" class="mixed-media-banner-bg-image" />
+        <img src="{{ site.baseurl }}{{ page.mixed-media-banner.background-image }}" alt="" class="mixed-media-banner-bg-image" />
     {% else %}
     <section class="mixed-media-banner white-bg-container">
-        <img src="{{ site.default_white_image }}" alt="" class="mixed-media-banner-bg-image white-bg" />
+        <img src="{{ site.baseurl }}{{ site.default_white_image }}" alt="" class="mixed-media-banner-bg-image white-bg" />
     {% endif %}
 
     <div class="mixed-media-banner-cards">
@@ -11,7 +11,7 @@
             <div class="mixed-media-banner-card">
                 {% if card.image %}
                     <div class="mixed-media-banner-card-image-wrapper">
-                        <img src="{{ card.image }}" alt="" />
+                        <img src="{{ site.baseurl }}{{ card.image }}" alt="" />
                     </div>
                     <div class="mixed-media-banner-content">
                         {% if card.title %}

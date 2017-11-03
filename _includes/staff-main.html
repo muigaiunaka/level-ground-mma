@@ -3,7 +3,7 @@
     <div class="staff-banner">
             {% if person.image %}
             <div class="staff-banner-image-wrapper">
-            <img src="{{ person.image }}" alt="{{ person.name }}"/>
+            <img src="{{ site.baseurl }}{{ person.image }}" alt="{{ person.name }}"/>
             {% else %}
             <div class="staff-banner-image-wrapper logo-wrapper">
             <img src="{{ site.baseurl }}/assets/image/lg_logo.png" class="logo"/>
