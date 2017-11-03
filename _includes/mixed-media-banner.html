@@ -24,7 +24,7 @@
                             <em>{{ card.footnote }}</em>
                         {% endif %}
                         {% if card.cta.text %}
-                            <a href="{{ card.cta.link  }}">
+                            <a href="{{ site.baseurl }}{{ card.cta.link  }}">
                                 <button>{{ card.cta.text  }}</button>
                             </a>
                         {% endif %}
@@ -38,7 +38,7 @@
                             <p>{{ card.description }}</p>
                         {% endif %}
                         {% if card.cta.text %}
-                            <a href="{{ card.cta.link  }}">
+                            <a href="{{ site.baseurl }}{{ card.cta.link  }}">
                                 <button>{{ card.cta.text  }}</button>
                             </a>
                         {% endif %}
@@ -50,14 +50,14 @@
             <div class="mixed-media-banner-footnote">
                 <em>{{ page.mixed-media-banner.footnote }}</em>
                 {% if page.mixed-media-banner.cta.text %}
-                    <a href="{{ page.mixed-media-banner.cta.link  }}">
+                    <a href="{{ site.baseurl }}{{ page.mixed-media-banner.cta.link  }}">
                         <button>{{ page.mixed-media-banner.cta.text  }}</button>
                     </a>
                 {% endif %}
             </div>
         {% elsif page.mixed-media-banner.cta.text %}
             <div class="mixed-media-banner-footnote">
-                <a href="{{ page.mixed-media-banner.cta.link  }}">
+                <a href="{{ site.baseurl }}{{ page.mixed-media-banner.cta.link  }}">
                     <button>{{ page.mixed-media-banner.cta.text  }}</button>
                 </a>
             </div>
