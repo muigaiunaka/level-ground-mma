@@ -1,12 +1,12 @@
 <section class="hero-banner">
     {% if page.hero-banner.media.video %}
         <video class="hero-banner-video" loop muted autoplay playsinline preload="auto">
-            <source src="{{ page.hero-banner.media.video }}" type="video/mp4">
+            <source src="{{ site.baseurl }}{{ page.hero-banner.media.video }}" type="video/mp4">
         </video>
     {% elsif page.hero-banner.media.image %}
-        <img src="{{ page.hero-banner.media.image }} " alt="" class="hero-banner-image" />
+        <img src="{{ site.baseurl }}{{ page.hero-banner.media.image }} " alt="" class="hero-banner-image" />
     {% else %}
-        <img src="{{ site.default_image }}" alt="" class="hero-banner-image" />
+        <img src="{{ site.baseurl }}{{ site.default_image }}" alt="" class="hero-banner-image" />
     {% endif %}
     <div class="hero-banner-content">
         {% if page.hero-banner.description %}

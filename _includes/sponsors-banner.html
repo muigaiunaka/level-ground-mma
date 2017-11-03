@@ -6,7 +6,7 @@
 
                 {% if logo.website %}
                     <a href="{{ logo.website }}" target="_blank">
-                        <img src="{{ logo.image }}" alt="{{ logo.name }} + sponsor logo" />
+                        <img src="{{ site.baseurl }}{{ logo.image }}" alt="{{ logo.name }} + sponsor logo" />
                     </a>
                 {% else %}
                     <a href="#">
