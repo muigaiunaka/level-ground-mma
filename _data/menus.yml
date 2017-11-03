@@ -29,7 +29,7 @@ social-media:
     title: twitter
     identifier: twitter
     icon: fa-twitter-square
-  - url: http://www.email.com
+  - url: mailto:ali@levelgroundmma.org
     title: email
     identifier: email
     icon: fa-envelope-o
