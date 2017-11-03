@@ -1,7 +1,7 @@
 <header>
     <nav class="header-nav">
         <ul class="header-nav-list">
-            {% for item in site.menus.header %}
+            {% for item in site.data.menus.header %}
             <li class="menu-item-{{ loop.index }}">
                 <a href="{{ site.baseurl }}{{ item.url }}" title="Go to {{ item.title }}">
                     {{ item.title }}
@@ -18,14 +18,14 @@
                 <span></span>
                 <div class="navigation-drawer-menu-button">Menu</div>
                 <ul class="menu">
-                {% for item in site.menus.site-map %}
+                {% for item in site.data.menus.site-map %}
                     <li class="footer-menu-item-{{ loop.index }}">
                         <a href="{{ site.baseurl }}{{ item.url }}" title="Go to {{ item.title }}">
                             {{ item.title }}
                         </a>
                     </li>
                 {% endfor %}
-                {% for item in site.menus.social-media %}
+                {% for item in site.data.menus.social-media %}
                     <li class="social-media-{{ loop.index }}">
                         <a href="{{ item.url }}" title="Go to {{ item.title }}">
                         <i class="fa {{ item.icon }}" aria-hidden="true"></i>
@@ -37,7 +37,7 @@
         </nav>
         <!-- Mobile Navigation Ends -->
         <ul class="header-nav-list">
-            {% for item in site.menus.header-logo %}
+            {% for item in site.data.menus.header-logo %}
             <li class="menu-item-{{ loop.index }}">
                 <a href="{{ site.baseurl }}{{ item.url }}" title="Go to {{ item.title }}">
                     <img src="{{ site.baseurl }}{{ item.logo-image }}" alt="{{ item.title }}" />
@@ -46,7 +46,7 @@
             {% endfor %}
         </ul>
         <ul class="header-nav-list">
-            {% for item in site.menus.header-cta %}
+            {% for item in site.data.menus.header-cta %}
             <li class="menu-item-{{ loop.index }}">
                 <a href="{{ site.baseurl }}{{ item.url }}" title="Go to {{ item.title }}">
                     <button>

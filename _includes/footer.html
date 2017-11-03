@@ -1,7 +1,7 @@
 <footer>
     <section>
         <ul>
-            {% for item in site.menus.social-media %}
+            {% for item in site.data.menus.social-media %}
             <li class="social-media-{{ loop.index }}">
                 <a href="{{ item.url }}" title="Go to {{ item.title }}">
                     <i class="fa {{ item.icon }}" aria-hidden="true"></i>
@@ -11,7 +11,7 @@
         </ul>
         <ul>
             <h5>Site Map</h5>
-            {% for item in site.menus.site-map %}
+            {% for item in site.data.menus.site-map %}
             <li class="footer-menu-item-{{ loop.index }}">
                 <a href="{{ site.baseurl }}{{ item.url }}" title="Go to {{ item.title }}">
                     {{ item.title }}
@@ -37,7 +37,7 @@
         <br><br>
         Designed and Developed by <a href="http://www.resilientcoders.org">Resilient Coders</a>
     </small>
-    <a href="/">
+    <a href="{{ site.baseurl }}">
         <img src="{{ site.baseurl }}/assets/image/lg_logo.png" alt="logo" />
     </a>
 </footer>
